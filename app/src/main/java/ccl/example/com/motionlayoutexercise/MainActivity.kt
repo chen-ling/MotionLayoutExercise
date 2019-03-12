@@ -71,13 +71,13 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         when (item.itemId) {
             R.id.nav_camera -> {
                 // Handle the camera action
-                fragment = Exercise02Fragment.newInstance()
+                fragment = Exercise01Fragment.newInstance()
             }
             R.id.nav_gallery -> {
-
+                fragment = Exercise02Fragment.newInstance()
             }
             R.id.nav_slideshow -> {
-
+                fragment = Exercise03Fragment.newInstance()
             }
             R.id.nav_manage -> {
 
