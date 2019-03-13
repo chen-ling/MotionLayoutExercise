@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         setSupportActionBar(toolbar)
 
         if (savedInstanceState == null) {
-            fragment = Exercise01Fragment.newInstance().also {
+            fragment = BaseMotionFragment.newInstance().also {
                 supportFragmentManager.beginTransaction()
                     .replace(R.id.container, it)
                     .commitNow()
@@ -71,13 +71,13 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         when (item.itemId) {
             R.id.nav_camera -> {
                 // Handle the camera action
-                fragment = Exercise01Fragment.newInstance()
+                fragment = BaseMotionFragment.newInstance()
             }
             R.id.nav_gallery -> {
-                fragment = Exercise02Fragment.newInstance()
+                fragment = CustomAttributeFragment.newInstance()
             }
             R.id.nav_slideshow -> {
-                fragment = Exercise03Fragment.newInstance()
+                fragment = KeyPositionFragment.newInstance()
             }
             R.id.nav_manage -> {
 

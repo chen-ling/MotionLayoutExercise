@@ -6,14 +6,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
-class Exercise01Fragment : Fragment() {
+class CustomAttributeFragment : Fragment() {
 
     companion object {
-        fun newInstance() = Exercise01Fragment()
+        fun newInstance() = CustomAttributeFragment()
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View {
-        return inflater.inflate(R.layout.fragment_exercise01, container, false)
+        return inflater.inflate(R.layout.fragment_custom_attr, container, false)
     }
 }

@@ -6,14 +6,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
-class Exercise02Fragment : Fragment() {
+class KeyPositionFragment : Fragment() {
 
     companion object {
-        fun newInstance() = Exercise02Fragment()
+        fun newInstance() = KeyPositionFragment()
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View {
-        return inflater.inflate(R.layout.fragment_exercise02, container, false)
+        return inflater.inflate(R.layout.fragment_key_position, container, false)
     }
 }
