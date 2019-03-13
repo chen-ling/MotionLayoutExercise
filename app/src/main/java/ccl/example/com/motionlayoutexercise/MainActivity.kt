@@ -69,18 +69,18 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         val transaction = supportFragmentManager.beginTransaction()
         when (item.itemId) {
-            R.id.nav_camera -> {
+            R.id.nav_base -> {
                 // Handle the camera action
                 fragment = BaseMotionFragment.newInstance()
             }
-            R.id.nav_gallery -> {
+            R.id.nav_custom_attr -> {
                 fragment = CustomAttributeFragment.newInstance()
             }
-            R.id.nav_slideshow -> {
+            R.id.nav_key_position -> {
                 fragment = KeyPositionFragment.newInstance()
             }
-            R.id.nav_manage -> {
-
+            R.id.nav_key_attr -> {
+                fragment = KeyAttributeFragment.newInstance()
             }
             R.id.nav_share -> {
 

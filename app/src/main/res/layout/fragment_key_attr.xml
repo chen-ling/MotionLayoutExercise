@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="55dp"
-    app:layoutDescription="@xml/motion_scene_key_position"
+    app:layoutDescription="@xml/motion_scene_key_attr"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     app:showPaths="true"
     tools:showIn="@layout/app_bar_main"
