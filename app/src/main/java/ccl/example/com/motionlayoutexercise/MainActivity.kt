@@ -82,8 +82,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.nav_key_attr -> {
                 fragment = KeyAttributeFragment.newInstance()
             }
-            R.id.nav_share -> {
-
+            R.id.nav_key_cycle -> {
+                fragment = KeyCycleFragment.newInstance()
             }
             R.id.nav_send -> {
 

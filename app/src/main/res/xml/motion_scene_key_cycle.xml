@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+    <Transition
+        motion:constraintSetStart="@id/start"
+        motion:constraintSetEnd="@id/end"
+        motion:duration="5000"
+        motion:interpolator="anticipate">
+        <OnSwipe
+            motion:touchAnchorId="@+id/yui"
+            motion:dragDirection="dragUp"
+        />
+        <KeyFrameSet>
+            <KeyCycle
+                android:rotation="25"
+                motion:framePosition="50"
+                motion:target="@+id/yui"
+                motion:wavePeriod="5"
+                motion:waveOffset="40dp"
+                motion:waveShape="triangle" />
+            <KeyAttribute
+                motion:target="@id/yui"
+                android:scaleX="2"
+                android:scaleY="2"
+                motion:framePosition="50" />
+        </KeyFrameSet>
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@id/yui"
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"/>
+    </ConstraintSet>
+
+    <ConstraintSet
+        android:id="@+id/end">
+        <Constraint
+            android:id="@id/yui"
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"/>
+        >
+    </ConstraintSet>
+</MotionScene>
