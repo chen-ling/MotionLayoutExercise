@@ -85,8 +85,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.nav_key_cycle -> {
                 fragment = KeyCycleFragment.newInstance()
             }
-            R.id.nav_send -> {
-
+            R.id.nav_coordinator -> {
+                fragment = CoordinatorLayoutFragment.newInstance()
             }
         }
         transaction.replace(R.id.container, fragment).commitAllowingStateLoss()
