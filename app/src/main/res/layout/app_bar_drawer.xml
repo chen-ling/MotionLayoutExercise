@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ccl.example.com.motionlayoutexercise.utils.DrawerContent
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:layoutDescription="@xml/motion_scene_drawer">
+
+    <include layout="@layout/fragment_coordinator"/>
+
+</ccl.example.com.motionlayoutexercise.utils.DrawerContent>

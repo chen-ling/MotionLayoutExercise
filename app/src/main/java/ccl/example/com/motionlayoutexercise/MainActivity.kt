@@ -1,5 +1,6 @@
 package ccl.example.com.motionlayoutexercise
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.NavigationView
 import android.support.design.widget.Snackbar
@@ -88,8 +89,14 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.nav_coordinator -> {
                 fragment = CoordinatorLayoutFragment.newInstance()
             }
+            R.id.nav_drawer -> {
+                val intent = Intent(this, DrawerActivity::class.java)
+                startActivity(intent)
+            }
         }
-        transaction.replace(R.id.container, fragment).commitAllowingStateLoss()
+        if (item.itemId != R.id.nav_drawer) {
+            transaction.replace(R.id.container, fragment).commitAllowingStateLoss()
+        }
         drawer_layout.closeDrawer(GravityCompat.START)
         return true
     }
