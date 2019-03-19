@@ -93,6 +93,15 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 val intent = Intent(this, DrawerActivity::class.java)
                 startActivity(intent)
             }
+            R.id.nav_view_pager -> {
+                fragment = ViewPagerFragment.newInstance()
+            }
+            R.id.nav_lottie -> {
+                fragment = LottieFragment.newInstance()
+            }
+            R.id.nav_image_change -> {
+                fragment = ReplaceImageFragment.newInstance()
+            }
         }
         if (item.itemId != R.id.nav_drawer) {
             transaction.replace(R.id.container, fragment).commitAllowingStateLoss()

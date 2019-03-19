@@ -21,24 +21,34 @@
                 android:icon="@drawable/ic_menu_manage"
                 android:title="KeyAttribute"/>
         <item
-            android:id="@+id/nav_key_cycle"
-            android:icon="@drawable/ic_menu_share"
-            android:title="KeyCycle"/>
+                android:id="@+id/nav_key_cycle"
+                android:icon="@drawable/ic_menu_share"
+                android:title="KeyCycle"/>
 
         <item
-            android:id="@+id/nav_coordinator"
-            android:icon="@drawable/ic_menu_send"
-            android:title="CoordinatorLayout"/>
+                android:id="@+id/nav_coordinator"
+                android:icon="@drawable/ic_menu_send"
+                android:title="CoordinatorLayout"/>
 
         <item
-            android:id="@+id/nav_drawer"
-            android:icon="@drawable/ic_menu_send"
-            android:title="DrawerLayout"/>
+                android:id="@+id/nav_drawer"
+                android:icon="@drawable/ic_menu_send"
+                android:title="DrawerLayout"/>
 
         <item
-            android:id="@+id/nav_view_pager"
-            android:icon="@drawable/ic_menu_send"
-            android:title="ViewPager"/>
+                android:id="@+id/nav_view_pager"
+                android:icon="@drawable/ic_menu_send"
+                android:title="ViewPager"/>
+
+        <item
+                android:id="@+id/nav_lottie"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Lottie"/>
+
+        <item
+                android:id="@+id/nav_image_change"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Replace image"/>
     </group>
 
 </menu>
